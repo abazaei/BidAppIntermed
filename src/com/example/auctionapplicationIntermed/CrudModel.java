@@ -1,7 +1,7 @@
 package com.example.auctionapplicationIntermed;
 
 public class CrudModel {
-	private enum Command{
+	public static enum Command{
 		ADD, DELETE, BID, UPDATE
 	}
 	private Command command;
