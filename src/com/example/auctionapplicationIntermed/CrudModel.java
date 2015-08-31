@@ -1,6 +1,8 @@
 package com.example.auctionapplicationIntermed;
 
-public class CrudModel {
+import java.io.Serializable;
+
+public class CrudModel implements Serializable{
 	public static enum Command{
 		ADD, DELETE, BID, UPDATE
 	}
@@ -8,7 +10,7 @@ public class CrudModel {
 	private String args;
 	
 	public CrudModel(Command cmd, String str){
-		this.command = command;
+		this.command = cmd;
 		this.args = str;
 	}
 	
@@ -17,6 +19,10 @@ public class CrudModel {
 	}
 	public String getArgs(){
 		return args;
+	}
+	
+	public String toString(){
+		return ("[cmd: " + this.command.toString() + ", args: " + this.args + "]");
 	}
 	
 }
