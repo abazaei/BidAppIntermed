@@ -22,7 +22,7 @@ public class CrudModel implements Serializable{
 	}
 	
 	public String toString(){
-		return ("[cmd: " + this.command.toString() + ", args: " + this.args + "]");
+		return ("[cmd: " + this.command.toString() + ", args: '" + this.args + "']");
 	}
 	
 }
