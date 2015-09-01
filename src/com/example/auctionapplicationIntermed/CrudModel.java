@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class CrudModel implements Serializable{
 	public static enum Command{
-		ADD, DELETE, BID, UPDATE
+		ADD, DELETE, BID, UPDATE, READ
 	}
 	private Command command;
 	private String args;
